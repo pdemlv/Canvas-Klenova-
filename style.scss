@@ -1,0 +1,190 @@
+*{
+	box-sizing: border-box;
+}
+
+$green: #b8d91e;
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('Calibri.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html{
+	font-size: 16px;
+}
+
+body{
+	font-family: "Calibri";
+}
+#my-navbar{
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.95);
+	background-image: linear-gradient(to right, 
+						#f6f6f6 0%, 
+						#ffffff 42%, 
+						#ffffff 100%);
+	opacity: 0.95;
+
+}
+.navbar-nav{
+	width: 100%;
+	li{
+		padding-left: 8px;
+		margin: 0 18px;
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 15px;
+		a{
+			color: black !important;
+		}
+	}
+	&__adv{
+		background: url(img/icon-advantages.png) left no-repeat;
+	}
+	&__pla{
+		background: url(img/icon-plan.png) left no-repeat;
+	}
+	&__con{
+		background: url(img/icon-contacts.png) left no-repeat;
+	}
+	&__doc{
+		background: url(img/icon-documents.png) left no-repeat;
+	}
+	&__pho{
+		background: url(img/icon-photo.png) left no-repeat;
+	}
+	&__loc{
+		background: url(img/icon-location.png) left no-repeat;
+	}
+}
+
+.main{
+	position: relative;
+	background: url(img/005.png) center no-repeat ;
+	background-size: cover;
+	&__navigation{
+		position: relative;
+		height: 127px;
+		margin: 0;
+		border: none;
+		border-radius: 0; 
+		background: url(img/1.png) right no-repeat;
+		background-color: white;
+		display: flex;
+		align-items: center;
+	}
+	&__logo{
+		position: absolute;
+		z-index: 222;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&__home{
+		height: 100vh;
+		position: relative;
+		background: rgba(0, 0, 0, 0.75);
+		background-size: cover; 
+	}
+	&__headline-cont{
+		margin: 0 auto;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+	}
+	&__headline{
+		margin: 0;
+		line-height: 1;
+		color: $green;
+		font-size: 3.75rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	&__text{
+		margin: 5px 0 10px;
+		color: white;
+		font-size: 1rem;
+		text-transform: uppercase;
+	}
+	&__btn{
+		margin-top: 47px;
+		padding: 25px 36px 23px;
+		font-size: 1rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: black;
+		border: none;
+		border-radius: 30px;
+		background-color: white; 
+		outline: none;
+	}
+	&__scroll-down{
+		display: block;
+		padding-top: 80px;
+		width: 84px;
+		height: 85px;
+		background: url(img/scroll-down.png) center no-repeat;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: white;
+		margin: 142px auto 0;
+		&:hover, &:focus {
+			color: white;
+			text-decoration: none;
+		}
+	}
+	&__can-cont{
+		width: 100%;
+		height: 300px;
+		position: absolute;
+		bottom: -70px;
+		background: transparent;
+		background: url(img/zdano.png) 75% 0% no-repeat;
+	}
+}
+
+.adv{
+	background: #f7f7f8;
+	padding: 100px 0;
+	text-align: center;
+	 
+	&__item{
+		width: 270px;
+		height: 360px;
+		margin: 0 15px;
+		display: inline-block;
+		padding-top: 200px; 
+		box-shadow: 0 5px 15px rgba(77, 91, 15, 0.15);
+		border-radius: 10px;
+		border: 1px solid white;
+		background-color: #ffffff;
+	}
+	&__headline{
+		font-size: 1.5625rem;
+		font-weight: 700;
+	}
+	&__paragraph{
+		width: 80%;
+		margin: 0 auto;
+		font-size: 1rem;
+		color: #8d8d8d;
+	}
+}
+.wood{
+	background: url(img/wood.png) 50% 30% no-repeat;
+}
+.location{
+	background: url(img/location.png) 50% 30% no-repeat;
+}
+.comunication{
+	background: url(img/comunication.png) 50% 30% no-repeat;
+}
+.earth{
+	background: url(img/earth.png) 50% 30% no-repeat;
+}
+
